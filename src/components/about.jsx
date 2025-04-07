@@ -12,16 +12,24 @@ const About = () => {
       className="bg-[#f9f9ff] min-h-screen flex items-center justify-center"
     >
       <div className=" flex md:flex-row flex-col">
-        <div className="w-full md:w-1/2 mb-8 md:mb-0 h-screen flex justify-center  pt-0 md:pt-16 p-6">
+        <div className=" mx-auto w-1/2 mb-8 md:mb-0 h-screen flex justify-center  pt-0 md:pt-16 p-6">
           <img
             src={about}
             alt="Hero"
             className=" max-w-md mx-auto  rounded-2xl shadow-lg object-fill"
           />
         </div>
-        <div className=" w-1/2 flex flex-col justify-center items-start p-6">
-          <h1 className="text-4xl font-bold text-primary">About Me</h1>
-          <p className="text-lg font-normal text-gray-700 mt-4">
+        <div className=" md:w-1/2 flex flex-col justify-center items-center mx-auto w-11/12 md:items-start p-6">
+          <h1 className="text-4xl font-bold text-primary md:text-start text-center leading-tight ">
+            <a
+              href="#about"
+              className="hover:text-primary-dark transition duration-300"
+            >
+              About Me{" "}
+            </a>
+          </h1>
+
+          <p className="text-lg font-normal text-gray-700 mt-4 text-center md:text-start">
             I am a highly motivated analytics engineer with a passion for
             solving complex data challenges. I hold a Master's degree in Data
             Science and have several years of experience as a Product Manager in
