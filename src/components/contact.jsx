@@ -1,6 +1,6 @@
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import ContactForm from "./ContactForm";
+import ContactForm from "./contactForm";
 
 const Contact = () => {
   return (
