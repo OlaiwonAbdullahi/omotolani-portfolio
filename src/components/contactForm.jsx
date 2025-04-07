@@ -1,7 +1,10 @@
+import { BiSend } from "react-icons/bi";
+
 const ContactForm = () => {
   return (
     <div>
       <form action="" className=" flex flex-col gap-3 w-full p-5">
+        <span className="text-2xl text-primary">Message Me</span>
         <div className=" flex flex-col md:flex-row gap-3 w-full">
           <input
             type="text"
@@ -29,10 +32,10 @@ const ContactForm = () => {
             className=" bg-primary/10 p-2 focus:outline-none text-sm rounded text-primary w-full h-36 border border-primary"
           />
         </div>
-        <div className=" flex justify-end">
+        <div className=" flex justify-end ">
           <a href="mailto: omotolaniosems@gmail.com">
-            <button className="bg-primary text-white p-1.5 px-2 rounded-full">
-              Send Message
+            <button className="bg-primary text-white p-1.5 px-2 rounded-full flex flex-row gap-2 items-center hover:bg-[#7a45e6] transition duration-300">
+              Send Message <BiSend className=" bg-primary size-5" />
             </button>
           </a>
         </div>

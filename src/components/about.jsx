@@ -12,11 +12,11 @@ const About = () => {
       className="bg-[#f9f9ff] min-h-screen flex items-center justify-center"
     >
       <div className=" flex md:flex-row flex-col">
-        <div className=" mx-auto w-1/3 mb-8 md:mb-0 h-screen flex justify-center  pt-0 md:pt-16 p-6">
+        <div className=" mx-auto w-1/3  md:mb-0 h-screen flex justify-center items-center pt-0 md:pt-16 p-6">
           <img
             src={about}
             alt="Hero"
-            className=" max-w-md mx-auto  rounded-2xl shadow-lg object-cover h-3/5 w-3/5 md:w-3/5 md:h-3/5"
+            className=" max-w-md mx-auto  rounded-2xl shadow-lg object-cover h-4/5 "
           />
         </div>
         <div className=" md:w-1/2 flex flex-col justify-center items-center mx-auto w-11/12 md:items-start p-6">
@@ -47,23 +47,23 @@ const About = () => {
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-6 mt-6">
             <div className="flex flex-col items-center">
-              <SiPython className="text-4xl text-primary" />
+              <SiPython className="text-3xl md:text-4xl text-primary" />
               <span className="text-sm text-gray-700 mt-1">Python</span>
             </div>
             <div className="flex flex-col items-center">
-              <SiMysql className="text-4xl text-primary" />
+              <SiMysql className="text-3xl md:text-4xl text-primary" />
               <span className="text-sm text-gray-700 mt-1">MySQL</span>
             </div>
             <div className="flex flex-col items-center">
-              <LiaAws className="text-4xl text-primary" />
+              <LiaAws className="text-3xl md:text-4xl text-primary" />
               <span className="text-sm text-gray-700 mt-1">AWS</span>
             </div>
             <div className="flex flex-col items-center">
-              <BiLogoDjango className="text-4xl text-primary" />
+              <BiLogoDjango className="text-3xl md:text-4xl text-primary" />
               <span className="text-sm text-gray-700 mt-1">Django</span>
             </div>
             <div className="flex flex-col items-center">
-              <PiBrainThin className="text-4xl text-primary" />
+              <PiBrainThin className="text-3xl md:text-4xl text-primary" />
               <span className="text-sm text-gray-700 mt-1">ML</span>
             </div>
           </div>
