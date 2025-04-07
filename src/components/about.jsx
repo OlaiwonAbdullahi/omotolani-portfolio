@@ -12,8 +12,7 @@ const About = () => {
   }, []);
   return (
     <div
-      id="
-    about"
+      id="about"
       className="bg-[#f9f9ff] min-h-screen flex items-center justify-center"
     >
       <div className=" flex md:flex-row flex-col">

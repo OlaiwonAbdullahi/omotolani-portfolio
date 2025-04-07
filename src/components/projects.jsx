@@ -69,6 +69,7 @@ const Projects = () => {
       <h1
         className="text-4xl font-bold text-primary md:text-start text-center leading-tight "
         data-aos="fade-right"
+        id="projects"
       >
         Projects
       </h1>

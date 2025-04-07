@@ -9,7 +9,7 @@ const Contact = () => {
     Aos.init({ duration: 1200 }); // Initialize AOS with a duration option (optional)
   }, []);
   return (
-    <div className="">
+    <div className="" id="contact">
       <h1
         className="text-4xl font-bold text-primary md:text-start text-center leading-tight pl-8"
         data-aos="fade-right"

@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Projects", id: "projects" },
-    { name: "Blog", id: "blog" },
+    { name: "Contact", id: "contact" },
   ];
 
   return (
@@ -40,15 +40,9 @@ const Navbar = () => {
 
       {/* Button */}
       <div className="flex items-center gap-4 z-10">
-        <Link to="/signup">
-          <button className="cursor-pointer hidden md:block border-primary border text-primary hover:bg-primary-dark bg-white text-sm px-4 py-1.5 rounded-full transition duration-300">
-            Download CV
-          </button>
-        </Link>
-
-        <Link to="/login">
+        <Link to="/">
           <button className="cursor-pointer hidden md:block bg-primary hover:bg-[#7a45e6] text-white text-sm px-4 py-1.5 rounded-full transition duration-300">
-            Contact
+            Download CV
           </button>
         </Link>
       </div>
@@ -82,9 +76,6 @@ const Navbar = () => {
           <div className=" flex flex-col gap-2 justify-center ">
             <button className="bg-primary hover:bg-[#7a45e6] text-white text-sm px-4 py-1.5 rounded-full transition duration-300">
               Download CV
-            </button>
-            <button className="bg-primary hover:bg-[#7a45e6] text-white text-sm px-4 py-1.5 rounded-full transition duration-300">
-              Contact
             </button>
           </div>
         </ul>
