@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center p-6  ">
         <span>Hey, I'm</span>
-        <h1 className="text-3xl md:text-4xl font-bold text-primary md:text-left text-center leading-tight font-sora">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary md:text-left text-center leading-tight font-sora whitespace-nowrap">
           Omotolani Kehide-Osems
         </h1>
         <p className="text-gray-700 text-sm md:text-base leading-relaxed max-w-md md:text-left text-center mt-1">
@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
 
       {/* Right Image */}
-      <div className="w-full md:w-1/2 mb-0 flex justify-center pt-0 md:pt-16 mt-0 md:mt-0">
+      <div className="w-full md:w-1/2 mb-0 flex justify-center pt-0 md:pt-16 mt-2 md:mt-0">
         <img
           src={hero}
           alt="Hero"

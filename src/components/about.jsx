@@ -12,11 +12,11 @@ const About = () => {
       className="bg-[#f9f9ff] min-h-screen flex items-center justify-center"
     >
       <div className=" flex md:flex-row flex-col">
-        <div className=" mx-auto w-1/2 mb-8 md:mb-0 h-screen flex justify-center  pt-0 md:pt-16 p-6">
+        <div className=" mx-auto w-1/3 mb-8 md:mb-0 h-screen flex justify-center  pt-0 md:pt-16 p-6">
           <img
             src={about}
             alt="Hero"
-            className=" max-w-md mx-auto  rounded-2xl shadow-lg object-fill"
+            className=" max-w-md mx-auto  rounded-2xl shadow-lg object-cover h-3/5 w-3/5 md:w-3/5 md:h-3/5"
           />
         </div>
         <div className=" md:w-1/2 flex flex-col justify-center items-center mx-auto w-11/12 md:items-start p-6">

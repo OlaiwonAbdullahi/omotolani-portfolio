@@ -79,9 +79,14 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <button className="bg-[#8c52ff] hover:bg-[#7a45e6] text-white text-sm px-4 py-1.5 rounded-full transition duration-300">
-            Get Started
-          </button>
+          <div className=" flex flex-col gap-2 justify-center ">
+            <button className="bg-primary hover:bg-[#7a45e6] text-white text-sm px-4 py-1.5 rounded-full transition duration-300">
+              Download CV
+            </button>
+            <button className="bg-primary hover:bg-[#7a45e6] text-white text-sm px-4 py-1.5 rounded-full transition duration-300">
+              Contact
+            </button>
+          </div>
         </ul>
       )}
     </nav>

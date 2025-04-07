@@ -2,7 +2,7 @@ const ContactForm = () => {
   return (
     <div>
       <form action="" className=" flex flex-col gap-3 w-full p-5">
-        <div className=" flex gap-3 w-full">
+        <div className=" flex flex-col md:flex-row gap-3 w-full">
           <input
             type="text"
             placeholder="Your Name"
