@@ -1,18 +1,22 @@
+import React, { useEffect } from "react";
 import Aos from "aos";
 import hero from "../assets/omotolani.jpg"; // Importing the hero image
 import { LiaGithub, LiaLinkedin } from "react-icons/lia";
 import { RiMediumFill } from "react-icons/ri";
 import { SiTableau } from "react-icons/si";
 
-Aos.init();
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1200 }); // Initialize AOS with a duration option (optional)
+  }, []);
+
   return (
     <section
       id="home"
-      className=" z-20 flex flex-col-reverse md:flex-row justify-between px-6 md:px-20 bg-[#f9f9ff] min-h-[40vh] items-center gap-0"
+      className="z-20 flex flex-col-reverse md:flex-row justify-between px-6 md:px-20 bg-[#f9f9ff] min-h-[40vh] items-center gap-0"
     >
       {/* Left Content */}
-      <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center md:items-start p-6  ">
+      <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center md:items-start p-6">
         <span data-aos="fade-up-right">Hey, I'm</span>
         <h1
           data-aos="fade-up-right"
@@ -35,7 +39,7 @@ const Hero = () => {
               <LiaLinkedin className="size-6 bg-primary text-white rounded-full" />
             </button>
           </a>
-          <a href="https://medium.com/@omotolaniosems ">
+          <a href="https://medium.com/@omotolaniosems">
             <button
               className="bg-primary text-white p-3 rounded-full hover:shadow-md transition duration-300"
               data-aos="fade-up-right"
@@ -52,7 +56,10 @@ const Hero = () => {
             </button>
           </a>
           <a href="https://public.tableau.com/app/profile/kehinde.osems.omotolani">
-            <button className="bg-primary text-white p-3 rounded-full hover:shadow-md transition duration-300">
+            <button
+              className="bg-primary text-white p-3 rounded-full hover:shadow-md transition duration-300"
+              data-aos="fade-up-right"
+            >
               <SiTableau className="size-6 bg-primary text-white rounded-full" />
             </button>
           </a>

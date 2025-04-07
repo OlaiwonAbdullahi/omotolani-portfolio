@@ -6,6 +6,7 @@
   --font-sora: sora, "sans-serif";
   --font-afacad: afacad flux, "sans-serif";
   --color-primary: #002a6c;
+  --color-footer: #011638;
   --color-text: #b9b9bd;
 }
 * {
@@ -25,4 +26,9 @@
 }
 .bg-primary {
   background-color: var(--color-primary);
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

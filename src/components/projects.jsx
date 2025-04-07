@@ -1,3 +1,6 @@
+import Aos from "aos";
+import { useEffect } from "react";
+
 const projects = [
   {
     title: "Project 1",
@@ -58,9 +61,15 @@ const projects = [
 ];
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1200 }); // Initialize AOS with a duration option (optional)
+  }, []);
   return (
     <>
-      <h1 className="text-4xl font-bold text-primary md:text-start text-center leading-tight ">
+      <h1
+        className="text-4xl font-bold text-primary md:text-start text-center leading-tight "
+        data-aos="fade-right"
+      >
         Projects
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-3.5">
@@ -82,14 +91,19 @@ export default Projects;
 const ProjectCard = ({ description, link }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg p-4 mb-4">
-      <p className="text-gray-700 mb-4 text-lg">{description}</p>
+      <p className="text-gray-700 mb-4 text-lg" data-aos="flip-right">
+        {description}
+      </p>
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
         className="hover:underline"
       >
-        <button className="  bg-primary text-white px-2.5 p-1 rounded-full">
+        <button
+          className="  bg-primary text-white px-2.5 p-1 rounded-full"
+          data-aos="flip-right"
+        >
           View Project
         </button>
       </a>
