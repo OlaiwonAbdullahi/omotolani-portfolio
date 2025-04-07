@@ -1,15 +1,15 @@
-import { LiaLinkedin, LiaWhatsapp } from "react-icons/lia";
+import { LiaLinkedin } from "react-icons/lia";
 import { RiMediumFill, RiTwitterXFill } from "react-icons/ri";
 import { SiGithub, SiGmail, SiTableau } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="px-4 md:px-0 flex flex-col md:flex-row items-center justify-between mt-8">
-        <div className="basis-full md:basis-1/2 mb-6 md:mb-0">
-          <h2 className="text-footer font-inter text-3xl md:text-5xl text-center md:text-left md:ml-24">
-            Let's
-            <br />
+    <div className=" footer border-t border-primary/15 bg-Background text-primary ">
+      <div className="px-4 md:px-0 flex flex-col md:flex-row items-center justify-between mt-8 ">
+        <div className="basis-full md:basis-1/2 mb-6 md:mb-0 ">
+          <h2 className="text-footer font-inter text-3xl md:text-5xl text-center md:text-left md:ml-24 ">
+            Let's {/* */}
+            <br className=" md:flex hidden" />
             Work Together -
           </h2>
         </div>
@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row">
         <div className="basis-1/2 my-8">
           <span className="text-footer md:ml-24 text-center flex mx-auto justify-center md:justify-start">
-            &copy; {new Date().getFullYear()} All Rights footer
+            &copy; {new Date().getFullYear()} All Rights Reserved
           </span>
         </div>
         <div className="basis-1/2 flex mx-auto justify-center my-6 gap-3">
@@ -51,6 +51,10 @@ export default function Footer() {
             <RiMediumFill className="h-9 w-9" />
           </a>
         </div>
+      </div>
+      <div className=" text-center text-gray-500 text-sm mb-6">
+        Built with 💜 and ☕ by{" "}
+        <a href="https://abdullahiolaiwon.netlify.app">Abdullahi Olaiwon</a>
       </div>
     </div>
   );

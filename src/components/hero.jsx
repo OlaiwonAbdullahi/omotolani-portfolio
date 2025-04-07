@@ -71,7 +71,7 @@ const Hero = () => {
         <img
           src={hero}
           alt="Hero"
-          className="md:w-3/5 w-1/2 max-w-md mx-auto md:h-3/5 h-1/2 rounded-full shadow-lg object-cover"
+          className="md:w-3/5 w-3/5 max-w-md mx-auto md:h-3/4 h-1/2 rounded-full shadow-lg object-cover"
           data-aos="fade-up-left"
         />
       </div>

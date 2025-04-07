@@ -91,7 +91,7 @@ export default Projects;
 
 const ProjectCard = ({ description, link }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 mb-4">
+    <div className="bg-white shadow-sm rounded-lg p-4 mb-4">
       <p className="text-gray-700 mb-4 text-lg" data-aos="flip-right">
         {description}
       </p>
