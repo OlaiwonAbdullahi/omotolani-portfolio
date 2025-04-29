@@ -25,26 +25,6 @@ const Contact = () => {
         {/* Contact Info */}
         <div className="basis-1/3 flex flex-col justify-center items-center">
           <div className="flex flex-col gap-4 rounded-md shadow-md p-4 w-full lg:w-2/3 bg-white">
-            {/* Call Us Section */}
-            <div
-              className="flex items-center font-medium gap-3"
-              data-aos="fade-right"
-            >
-              <FaPhoneSquareAlt className="rounded-full text-primary h-6 w-6" />
-              <span>Call Me</span>
-            </div>
-            <div
-              className="flex flex-col gap-1 text-gray-600"
-              data-aos="fade-right"
-            >
-              <span>
-                Phone: <a href="tel:++447575099570">+447575099570</a>
-              </span>
-            </div>
-
-            <hr className="border-t border-gray-200" />
-
-            {/* Write to Us Section */}
             <div className="flex flex-col gap-3">
               <div
                 className="flex items-center gap-3 font-medium"
